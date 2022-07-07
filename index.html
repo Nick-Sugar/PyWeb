@@ -57,6 +57,7 @@
         <div id="editor" style="height: 600px"></div>
         <script>
             editor = ace.edit("editor");
+            editor.setFontSize(30);
             editor.$blockScrolling = Infinity;
             editor.setOptions({
                 enableBasicAutocompletion: true,
@@ -73,9 +74,10 @@
         output = document.getElementById("output_field")
         meta = "script"
         function UpLoad(){
-
+            alert("PCからファイルを読み込もうとしています")
         }
         function Download(){
+            alert("PCにファイルを保存します")
 
         }
         function Execution(){
